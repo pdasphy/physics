@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Blog | Pritam Das</title>
+
+  <meta name="description" content="Blog and activity updates of Pritam Das: research, lab development, outreach, conferences, and academic activities." />
+
+  <style>
+    :root {
+      --bg: #f6f7fb;
+      --card: #ffffff;
+      --text: #1f2937;
+      --muted: #6b7280;
+      --accent: #1d4ed8;
+      --accent-soft: #dbeafe;
+      --line: #e5e7eb;
+      --shadow: 0 14px 35px rgba(17, 24, 39, 0.08);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: Georgia, "Times New Roman", serif;
+      color: var(--text);
+      background: var(--bg);
+      line-height: 1.65;
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      background: rgba(255, 255, 255, 0.96);
+      border-bottom: 1px solid var(--line);
+      backdrop-filter: blur(8px);
+    }
+
+    .nav {
+      max-width: 1120px;
+      margin: 0 auto;
+      padding: 14px 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 18px;
+    }
+
+    .brand {
+      font-size: 1.15rem;
+      font-weight: bold;
+      color: #111827;
+      white-space: nowrap;
+    }
+
+    .menu {
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+      font-size: 0.95rem;
+    }
+
+    .container {
+      max-width: 1120px;
+      margin: 0 auto;
+      padding: 34px 24px 60px;
+    }
+
+    .hero {
+      padding: 38px;
+      background: var(--card);
+      border-radius: 22px;
+      box-shadow: var(--shadow);
+      margin-top: 14px;
+    }
+
+    .hero h1 {
+      font-size: 2.5rem;
+      line-height: 1.1;
+      margin: 0 0 8px;
+      color: #111827;
+    }
+
+    .subtitle {
+      font-size: 1.12rem;
+      color: var(--muted);
+      margin-bottom: 14px;
+    }
+
+    .tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 18px;
+    }
+
+    .tag {
+      background: var(--accent-soft);
+      color: #1e3a8a;
+      padding: 5px 10px;
+      border-radius: 999px;
+      font-size: 0.9rem;
+    }
+
+    section {
+      background: var(--card);
+      margin-top: 24px;
+      padding: 30px 34px;
+      border-radius: 18px;
+      box-shadow: 0 7px 22px rgba(17, 24, 39, 0.055);
+    }
+
+    h2 {
+      font-size: 1.55rem;
+      margin: 0 0 18px;
+      padding-bottom: 10px;
+      border-bottom: 2px solid var(--accent-soft);
+      color: #111827;
+    }
+
+    h3 {
+      margin: 0 0 6px;
+      color: #111827;
+    }
+
+    p {
+      margin: 0 0 12px;
+    }
+
+    .post {
+      border-left: 4px solid var(--accent-soft);
+      padding: 8px 0 8px 16px;
+      margin: 18px 0;
+    }
+
+    .post-date {
+      color: var(--muted);
+      font-size: 0.93rem;
+      margin-bottom: 4px;
+    }
+
+    .post-meta {
+      color: var(--muted);
+      font-size: 0.95rem;
+      margin-top: 8px;
+    }
+footer {
+      max-width: 1120px;
+      margin: 20px auto 50px;
+      padding: 0 24px;
+      color: var(--muted);
+      text-align: center;
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 820px) {
+      .nav {
+        align-items: flex-start;
+        flex-direction: column;
+      }
+
+      .menu {
+        justify-content: flex-start;
+      }
+
+      .hero {
+        padding: 28px;
+      }
+
+      .hero h1 {
+        font-size: 2.05rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <nav class="nav">
+      <a class="brand" href="index.html">Pritam Das</a>
+
+      <div class="menu">
+        <a href="index.html#about">About</a>
+        <a href="index.html#research">Research</a>
+        <a href="index.html#publications">Publications</a>
+        <a href="blog.html">Blog</a>
+        <a href="index.html#contact">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="container">
+    <div class="hero">
+      <h1>Blog & Activities</h1>
+
+      <div class="subtitle">
+        Published-paper highlights, research updates, lab activities, academic notes, outreach, and professional milestones.
+      </div>
+
+      <div class="tags">
+        <span class="tag">Research Updates</span>
+        <span class="tag">Published Papers</span>
+        <span class="tag">Lab Activities</span>
+        <span class="tag">Outreach</span>
+        <span class="tag">Conferences</span>
+        <span class="tag">Project Notes</span>
+      </div>
+    </div>
+
+
+    <section id="background">
+      <h2>Background: Excitons and Exciton–Polaritons</h2>
+
+      <p>
+        When light falls on a semiconductor, it can give energy to an electron and lift it to a higher
+        energy state. After the electron moves, it leaves behind an empty state called a hole. The electron
+        has negative charge, while the hole behaves like a positive charge. Because opposite charges attract,
+        the electron and hole can remain bound together. This bound electron–hole pair is called an
+        exciton.
+      </p>
+
+      <p>
+        Excitons play an important role in semiconductors and two-dimensional materials because they strongly
+        influence how the material absorbs light, emits light, and interacts with crystal vibrations. In
+        anisotropic materials such as ReS<sub>2</sub>, excitons are especially interesting because their optical
+        response depends strongly on direction and polarization.
+      </p>
+
+      <p>
+        When a two-dimensional material is placed inside an optical microcavity, light can be trapped between
+        the cavity mirrors. If the interaction between the trapped cavity photon and the exciton becomes strong
+        enough, they no longer behave as separate light and matter excitations. Instead, they mix together and
+        form a new hybrid quasiparticle called an exciton–polariton.
+      </p>
+
+      <p>
+        An exciton–polariton has both light-like and matter-like properties. Because of this hybrid nature,
+        exciton–polaritons are useful for controlling light–matter interaction and for exploring phenomena
+        such as room-temperature Bose–Einstein condensation, quantum simulators, non-Hermitian systems,
+        nonlinear optics, and future photonic devices.
+      </p>
+    </section>
+
+<section id="posts">
+      <h2>Recent Activities</h2>
+
+      <article class="post">
+        <div class="post-date">Published Paper | ACS Photonics, 2025</div>
+
+        <h3>Giant Resonance Raman Scattering in ReS<sub>2</sub></h3>
+<p>
+          In this work, we studied how anisotropic excitons in ReS<sub>2</sub> can strongly enhance Raman scattering.
+          ReS<sub>2</sub> is a low-symmetry two-dimensional material, and its excitonic transitions are strongly
+          polarization dependent. This makes it an interesting platform for studying how crystal anisotropy controls
+          light–matter interaction.
+        </p>
+
+        <p>
+          The main idea was to understand what happens when the excitation laser energy becomes resonant with
+          excitonic states of ReS<sub>2</sub>. Under this condition, the Raman signal can increase strongly because
+          the exciton acts as an intermediate channel between the incoming photon, the crystal vibration, and the
+          scattered photon. In our measurements, we observed a giant resonance Raman enhancement, and this enhancement
+          was strongly connected to the polarization direction of light with respect to the crystal axes.
+        </p>
+
+        <p>
+          This work shows that Raman scattering in anisotropic 2D materials is not only a vibrational fingerprint.
+          It also carries information about excitons, crystal anisotropy, and polarization-dependent light–matter
+          interaction.
+        </p>
+      </article>
+
+      <article class="post">
+        <div class="post-date">Published Paper | Physical Review B, 2025</div>
+
+        <h3>Zero-Threshold Polariton-Raman Laser</h3>
+<p>
+          This work explored Raman scattering in a strongly coupled ReS<sub>2</sub> microcavity system. In a
+          microcavity, photons can strongly interact with excitons in a material and form hybrid light–matter states
+          known as exciton–polaritons. These polaritons can strongly modify how light is emitted and scattered from
+          the system.
+        </p>
+
+        <p>
+          In this study, we investigated a polariton-assisted Raman process in an anisotropic microcavity. The key
+          observation was a zero-threshold-like Raman lasing behavior, where the Raman signal could be strongly
+          enhanced through polariton states. Here, the microcavity does not simply collect light; it changes the
+          available optical states and helps to control the Raman scattering pathway.
+        </p>
+
+        <p>
+          The system also showed features connected to non-Hermitian and PT-symmetric physics. This makes the work
+          interesting from both a fundamental point of view and a device-oriented point of view, because it suggests
+          that Raman processes can be engineered using cavity polaritons.
+        </p>
+      </article>
+
+      <article class="post">
+        <div class="post-date">Published Paper | Physical Review B, 2026</div>
+
+        <h3>Tunable Raman Polarization in Anisotropic Microcavity Polaritons</h3>
+<p>
+          In this work, we studied how the polarization of Raman-scattered light can be continuously tuned using an
+          anisotropic ReS<sub>2</sub> microcavity. ReS<sub>2</sub> has two strongly polarized excitonic transitions
+          along different crystal directions. When such an anisotropic material is placed inside an optical microcavity,
+          the excitons and cavity photons form polariton states with strong polarization-dependent properties.
+        </p>
+
+        <p>
+          The central result was that the polarization state of Raman emission could be controlled by changing the
+          excitation condition. By tuning the excitation energy and pump polarization, we could modify the relative
+          contribution of different polariton pathways and thereby tune the Raman polarization continuously.
+        </p>
+
+        <p>
+          This work shows that Raman polarization is not fixed only by material symmetry. It can also be engineered
+          through the cavity and polariton structure. Such control may be useful for polarization-programmable
+          photonic devices, anisotropic light sources, and future quantum optical platforms based on two-dimensional
+          materials.
+        </p>
+      </article>
+    </section>
+  </main>
+
+  <footer>
+    © 2026 Pritam Das. Blog page for academic and research activities.
+  </footer>
+</body>
+</html>
